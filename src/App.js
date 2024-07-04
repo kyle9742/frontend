@@ -5,6 +5,8 @@ import Navbar from "./layout/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import AddUser from "./AddUser";
+import EditUser from "./EditUser";
+import ViewUser from "./ViewUser";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="adduser" element={<AddUser />} />
+          <Route path="/edituser/:id" element={<EditUser />} />
+          <Route path="/viewuser/:id" element={<ViewUser />} />
         </Routes>
       </BrowserRouter>
     </div>
